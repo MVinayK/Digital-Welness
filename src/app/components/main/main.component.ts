@@ -11,9 +11,7 @@ export class MainComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    setInterval(() => {
-      this.router.navigate(['/product']);
-    }, 3000);
+    
   }
 
   ngOnDestroy() {

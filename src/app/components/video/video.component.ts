@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, Sanitizer, ViewChild } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Course } from 'src/app/model/cource';
 
@@ -10,19 +10,16 @@ import { Course } from 'src/app/model/cource';
 export class VideoComponent implements OnInit {
 
   @Input()
-  course: Course = new Course("", "", "", "");
-
-  //@ViewChild('iframe') 
-  //iframe: ElementRef;
+  course: Course = new Course("Welcome", "", "", "https://www.youtube.com/embed/cpP-fCo8Dn4");
 
   constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
-    console.log(this.course.toString);
+    this.course = new Course("Welcome", "", "", "https://www.youtube.com/embed/cpP-fCo8Dn4");
   }
 
   getUrl() {
-    this.sanitizer.bypassSecurityTrustResourceUrl(this.course.url);
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.course.url);
   }
 
 }
