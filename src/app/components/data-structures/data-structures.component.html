@@ -1,0 +1,27 @@
+<div>
+
+    <div class="header-content">
+        <div>
+            <h1>Data Structures Course</h1>
+            <p>Data Structures are the building blocks of programming, master it in order to proceed towards Problem solving</p>
+            <button mat-raised-button color="primary" class="hello">Hello Note</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="main-div">
+        <div class="side-menu">    
+            <ul>
+                <li><h1 style="font-size: 1.7em; margin-left: 10px;">Structures</h1></li>
+                <li *ngFor="let course of courses" class="course" (click)="playSelected(course)">
+                    {{course.name}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="body">
+            <app-video [course]="course"></app-video>
+        </div>
+    </div>
+</div>

@@ -15,12 +15,21 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatSelectModule} from '@angular/material/select';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { ProductComponent } from './components/product/product.component';
+import { DataStructuresComponent } from './components/data-structures/data-structures.component';
+import { ProblemSolvingComponent } from './components/problem-solving/problem-solving.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    ProductComponent,
+    DataStructuresComponent,
+    ProblemSolvingComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +37,7 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule, MatDividerModule, MatButtonModule, MatSelectModule, MatBadgeModule, MatExpansionModule, MatInputModule
+    MatCardModule, MatDividerModule, MatButtonModule, MatSelectModule, MatBadgeModule, MatExpansionModule, MatInputModule, MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

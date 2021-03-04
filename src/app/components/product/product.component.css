@@ -1,0 +1,72 @@
+.header-content {
+    background: linear-gradient(-90deg, #02203c, #001528);
+            /* color: white; */
+    position: relative;
+    min-height: 300px;
+    padding: 0 0 60px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content > div {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: monospace;
+}
+
+p {
+    font-size: large;
+}
+
+.hello {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.main-content {
+    position: relative;
+}
+
+.main-content > div {
+    margin: auto;
+    max-width: 70%;
+}
+
+.auto-margin {
+    margin: auto;
+}
+
+.ds {
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    background: white;
+    padding: 1.5em;
+    max-width: 80%;
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.ds > div {
+    padding: 3%;
+    width: 80%;
+    margin: auto;
+}
+
+.ds:hover {
+    cursor: pointer;
+    border-radius: .4em;
+    box-shadow:
+  0 4.5px 3.6px rgba(0, 0, 0, 0.024),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 30.1px 24.1px rgba(0, 0, 0, 0.046),
+  0 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+

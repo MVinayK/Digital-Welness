@@ -1,0 +1,56 @@
+<div>
+
+    <!--This is the header part which describes the course of action-->
+    <div class="header-content">
+        <div>
+            <h1>Our Products</h1>
+            <p>Pick a course and master it</p>
+            <button mat-raised-button color="primary" class="hello">Hello Note</button>
+        </div>
+    </div>
+
+    <!--This is the selection area of your courses-->
+    <div class="main-content">
+        <div>
+            <mat-grid-list cols="2" rowHeight="2:1">
+                <mat-grid-tile>
+                    <div class="ds" [routerLink]="['/data-structures']"> 
+                        <img src="../../assets/logos/dslogo.png" alt="data structure logo" style="max-width: 20%; padding: 2%;">
+                        <div>
+                            <p><strong>Data Structures</strong> are the building blocks, master it to lay
+                                a solid foundation in your software engineering career.</p>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="ds"> 
+                        <img src="../../assets/logos/dslogo.png" alt="data structure logo" style="max-width: 20%; padding: 2%;">
+                        <div>
+                            <p><strong>Problem Solving</strong> trains your brain, master it to lay
+                                a solid foundation in your software engineering career.</p>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="ds"> 
+                        <img src="../../assets/logos/dslogo.png" alt="data structure logo" style="max-width: 20%; padding: 2%;">
+                        <div>
+                            <p>Data Structures are the building blocks, master it to lay
+                                a solid foundation in your software engineering career.</p>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="ds"> 
+                        <img src="../../assets/logos/dslogo.png" alt="data structure logo" style="max-width: 20%; padding: 2%;">
+                        <div>
+                            <p>Data Structures are the building blocks, master it to lay
+                                a solid foundation in your software engineering career.</p>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+
+</div>
